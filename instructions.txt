@@ -40,13 +40,18 @@ JavaTest/
 - mathTest.java
 - mathTest.class
 
+[Please See the Structure Above as this is how I did it. There is room for more improvements since i have multiple of same file
+due to my testing and moving files around. I would download from the mediafire page if the instructions are confusing.]
+
+[I would advice if downloaded from the mediafire site to run starting from the python commands.
+so that would be to run py parseXML.py to py compareReport.py in order and that would give those results.]
 
 (1) Frist Step: compile mathTest.java into mathTest.class file. Current Folder: JavaTest
 javac mathTest.java
 
 (2) Second Step: use this command to generate the Tests. Make a folder called GenTests and move the test files there.
 java -classpath .;randoop-all-4.3.3.jar randoop.main.Main gentests --testclass=mathTest --time-limit=30
-
+ 
 (3) Third Step: Compile the Test classes using:
 javac -cp .;junit-4.13.2.jar RegressionTest.java
 
